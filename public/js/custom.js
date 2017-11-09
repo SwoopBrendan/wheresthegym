@@ -15,4 +15,5 @@ function showSettings() {
         settingsBlock.style.display = "none";
 
     }
+
 }

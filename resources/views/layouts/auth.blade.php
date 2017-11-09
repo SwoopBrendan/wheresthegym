@@ -10,14 +10,22 @@
 
     <title>{{ config('app.name', 'Laravel') }}</title>
 
-    <!-- Styles -->
-    <link href="{{ asset('paper-dashboard/assets/css/animate.min.css') }}" rel="stylesheet">
-    <link href="{{ asset('paper-dashboard/assets/css/bootstrap.min.css') }}" rel="stylesheet">
-    <link href="{{ asset('paper-dashboard/assets/css/paper-dashboard.css') }}" rel="stylesheet">
+    <!-- Wizard Styles -->
+    <link href="{{ asset('bootstrap-wizard/assets/css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('bootstrap-wizard/assets/css/gsdk-bootstrap-wizard.css') }}" rel="stylesheet">
 
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Muli:400,300' rel='stylesheet' type='text/css'>
-    <link href="{{ asset('paper-dashboard/assets/css/themify-icons.css') }}" rel="stylesheet">
+
+    <style>
+        body {
+            background: url('bootstrap-wizard/assets/img/wallpaper.jpg') no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+    </style>
 </head>
 
 <body>
@@ -30,19 +38,12 @@
 </div>
 </body>
 
-<!--   Core JS Files   -->
-<script src="{{ asset('paper-dashboard/assets/js/jquery-1.10.2.js') }}" type="text/javascript"></script>
-<script src="{{ asset('paper-dashboard/assets/js/bootstrap.min.js') }}" type="text/javascript"></script>
-<!--  Checkbox, Radio & Switch Plugins -->
-<script src="{{ asset('paper-dashboard/assets/js/bootstrap-checkbox-radio.js') }}" type="text/javascript"></script>
-<!--  Charts Plugin -->
-<script src="{{ asset('paper-dashboard/assets/js/chartist.min.js') }}" type="text/javascript"></script>
-<!--  Notifications Plugin    -->
-<script src="{{ asset('paper-dashboard/assets/js/bootstrap-notify.js') }}" type="text/javascript"></script>
-<!--  Google Maps Plugin    -->
-<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
-<!-- Paper Dashboard Core javascript and methods for Demo purpose -->
-<script src="{{ asset('paper-dashboard/assets/js/paper-dashboard.js') }}" type="text/javascript"></script>
+<!-- Wizard JS -->
+<script src="{{ asset('bootstrap-wizard/assets/js/jquery-1.10.2.js') }}" type="text/javascript"></script>
+<script src="{{ asset('bootstrap-wizard/assets/js/bootstrap.min.js') }}" type="text/javascript"></script>
+<script src="{{ asset('bootstrap-wizard/assets/js/jquery.validate.min.js') }}" type="text/javascript"></script>
+<script src="{{ asset('bootstrap-wizard/assets/js/jquery.bootstrap.wizard.js') }}" type="text/javascript"></script>
+<script src="{{ asset('bootstrap-wizard/assets/js/gsdk-bootstrap-wizard.js') }}" type="text/javascript"></script>
 
 @yield('scripts')
 
